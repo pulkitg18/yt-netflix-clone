@@ -1,0 +1,60 @@
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+  z-index: 1;
+}
+.nav__black {
+  background-color: #111;
+}
+.nav__logo {
+  position: fixed;
+  left: 20px;
+  object-fit: contain;
+  width: 80px;
+  background: transparent;
+}
+
+.nav__avatar {
+  position: fixed;
+  right: 20px;
+  width: 30px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.nav__dropdown {
+  display: block;
+  position: absolute;
+  background-color: black;
+  padding: 10px;
+  width: 150px;
+  height: 80px;
+  top: 52px;
+  right: 80px;
+}
+.nav__dropdown__avatar {
+  width: 32px;
+  height: 32px;
+}
+.nav__group {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.nav__dropdown__text {
+  margin-left: 10px;
+}
+.nav__dropdown__logout {
+  margin-top: -2px;
+  cursor: pointer;
+}
+.nav__dropdown__logout:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,72 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  background: url("/src/home-bg.jpg") left top / cover no-repeat;
+  overflow: hidden;
+}
+.header__image {
+  height: 36px;
+  width: 134px;
+  margin-right: 40px;
+}
+.header__container {
+  display: flex;
+  margin: 0 56px;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__container a {
+  display: flex;
+}
+.header__btn {
+  display: block;
+  background-color: #e50914;
+  width: 54px;
+  height: fit-content;
+  color: white;
+  border: 0;
+  font-size: 15px;
+  border-radius: 3px;
+  padding: 8px 17px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.header__btn:hover {
+  background: #f40612;
+}
+.header__text {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 8px solid #222;
+  text-align: center;
+  padding: 160px 45px;
+  padding-top: 60px;
+}
+.header__text__heading {
+  color: white;
+  max-width: 640px;
+  font-size: 50px;
+  font-weight: 500;
+  margin: auto;
+}
+.header__text__subTitle {
+  color: white;
+  font-size: 26px;
+  font-weight: normal;
+  margin: 16px auto;
+}
+
+@media (max-width: 600px) {
+  .header__text__heading {
+    font-size: 35px;
+  }
+  .header__text__subTitle {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1000px) {
+  .header__container {
+    margin: 0 30px;
+  }
+}
